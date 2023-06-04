@@ -1,0 +1,29 @@
+html{
+  background-color: rgb(27, 27, 27);
+}
+.SText{
+  font-size: 70px;
+  color:rgb(144, 95, 236);
+  width: 350px;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+.PText{
+  font-size: 14px;
+  color:rgba(157, 118, 228, 0.76);
+  width: 350px;
+  margin: 0 auto;
+  transition: 1s ease-in-out;
+}
+.mainBox{
+  font-family: Unbounded;
+  text-align: center;
+  margin-top: 20%;
+}
+.SText:hover{
+  color: rgb(201, 142, 201);
+  font-size: 65px;
+}
+.PText:hover{
+  color: rgb(174, 78, 212);
+}
