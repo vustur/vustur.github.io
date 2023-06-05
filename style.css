@@ -1,29 +1,53 @@
 html{
   background-color: rgb(27, 27, 27);
-}
-.SText{
-  font-size: 70px;
-  color:rgb(144, 95, 236);
-  width: 350px;
-  margin: 0 auto;
-  transition: 0.5s ease-in-out;
-}
-.PText{
-  font-size: 14px;
-  color:rgba(157, 118, 228, 0.76);
-  width: 350px;
-  margin: 0 auto;
-  transition: 1s ease-in-out;
-}
-.mainBox{
+  overflow-x: hidden;
   font-family: Unbounded;
   text-align: center;
+}
+
+#SText{
+  font-size: 70px;
+  color:rgb(144, 95, 236);
+  transition: 0.5s ease-in-out;
+  margin: 0;
+}
+
+#PText{
+  font-size: 14px;
+  color:rgba(157, 118, 228, 0.76);
+  transition: 1s ease-in-out;
+  margin: 0;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   margin-top: 20%;
 }
-.SText:hover{
+
+#mainBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80vh;
+  transition: 0.7s ease-out;
+}
+
+#thingsBox{
+  margin-left: auto;
+  color: rgb(27, 27, 27);
+  visibility: hidden;
+  transition: 1s ease-in-out;
+}
+
+#SText:hover{
   color: rgb(201, 142, 201);
   font-size: 65px;
 }
-.PText:hover{
+
+#PText:hover{
   color: rgb(174, 78, 212);
 }
