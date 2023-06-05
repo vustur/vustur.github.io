@@ -8,7 +8,7 @@ html{
 #SText{
   font-size: 70px;
   color:rgb(144, 95, 236);
-  transition: 0.5s ease-in-out;
+  transition: 0.5s cubic-bezier(0.42, 0, 0.03, 2.18);
   margin: 0;
 }
 
@@ -33,14 +33,15 @@ html{
   align-items: center;
   justify-content: center;
   margin-left: 80vh;
-  transition: 0.7s ease-out;
+  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
 }
 
 #thingsBox{
   margin-left: auto;
-  color: rgb(27, 27, 27);
+  color: rgb(145, 87, 242);
+  opacity: 0%;
   visibility: hidden;
-  transition: 1s ease-in-out;
+  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
 }
 
 #SText:hover{
