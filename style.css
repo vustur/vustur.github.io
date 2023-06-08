@@ -10,13 +10,15 @@ html{
   color:rgb(144, 95, 236);
   transition: 0.5s cubic-bezier(0.42, 0, 0.03, 2.18);
   margin: 0;
+  cursor: default;
 }
 
 #PText{
   font-size: 14px;
   color:rgba(157, 118, 228, 0.76);
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
   margin: 0;
+  cursor: pointer;
 }
 
 #container {
@@ -25,19 +27,21 @@ html{
   justify-content: center;
   margin: auto;
   margin-top: 20%;
+  height: 150px;
 }
 
 #mainBox{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-left: 80vh;
   transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
+  height: 10px;
 }
 
 #thingsBox{
   margin-left: auto;
+  margin-right: 0px;
   color: rgb(145, 87, 242);
   opacity: 0%;
   visibility: hidden;
@@ -51,4 +55,14 @@ html{
 
 #PText:hover{
   color: rgb(174, 78, 212);
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  transition: 0.2s cubic-bezier(1, 0, 0, 1);
+  cursor: pointer;
+}
+.icon:hover{
+  width: 25px;
 }

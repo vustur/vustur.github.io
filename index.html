@@ -16,10 +16,15 @@
 		<div id="container">
 			<div id="mainBox">
 				<p id="SText">Vustur</p>
-				<p id="PText" onclick="thingsEnable()">Click to see more</p>
+				<p id="PText" onclick="toggleThings(true)">Click to see more</p>
 			</div>
 			<div id="thingsBox">
-				<p id="things">Under construction</p>
+				<p id="HideThings" onclick="toggleThings(false)">Click to hide</p>
+				<div id="iconsBox">
+					<img class="icon" onclick="window.open('discord.html')" src="assets/icon_discord.png">
+					<img class="icon" onclick="window.open('github.html')"src="assets/icon_github.png">
+					<img class="icon" onclick="window.open('telegram.html')" src="assets/icon_telegram.png">
+				</div>
 			</div>
 		</div>
 	</body>
