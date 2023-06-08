@@ -11,7 +11,7 @@ function toggleThings(isEnable){
         thingsBox.style.visibility = "visible";
         thingsBox.style.opacity = "100%";
         thingsBox.style.marginRight = "30%";
-        mainBox.style.marginLeft = "50vh";
+        mainBox.style.marginLeft = "18vw";
         PText.style.color = "rgb(40, 40, 40)";
     }
     if (!isEnable){
@@ -22,7 +22,7 @@ function toggleThings(isEnable){
         console.log("thingsDisabled")
         thingsBox.style.visibility = "hidden";
         thingsBox.style.opacity = "0%";
-        mainBox.style.marginLeft = "80vh";
+        mainBox.style.marginLeft = "38vw";
         PText.textContent = "Click to see more";
         PText.style.color = "rgba(157, 118, 228, 0.76)";
     }
