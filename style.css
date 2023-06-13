@@ -1,13 +1,39 @@
 html{
-  background-color: rgb(27, 27, 27);
+  /*  Vars  */
+  /* Цветовая палитра */
+  --purple: rgb(128, 67, 240);
+  --orred: rgb(223, 133, 106);
+  --orange: rgb(231, 178, 109);
+  --gray: rgb(27, 27, 27);
+
+  background-color: var(--gray);
   overflow-x: hidden;
+  overflow-y: hidden;
   font-family: Unbounded;
   text-align: center;
 }
 
+#container {
+  display: flex;
+  margin: auto;
+  margin-top: 40vh;
+  height: 25vh;
+  transition: 0.9s cubic-bezier(0.16, 0.41, 0.46, 1.0);
+}
+
+/*             Main box             */
+
+#mainBox{
+  display: flex;
+  flex-direction: column;
+  margin-left: 34vw;
+  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
+  margin-block: auto;
+}
+
 #SText{
-  font-size: 4.5vw;
-  color:rgb(144, 95, 236);
+  font-size: 6vw;
+  color:var(--purple);
   transition: 0.5s cubic-bezier(0.42, 0, 0.03, 2.18);
   margin: 0;
   cursor: default;
@@ -15,48 +41,102 @@ html{
 
 #PText{
   font-size: 1vw;
-  color:rgba(157, 118, 228, 0.76);
+  color:var(--orred);
   transition: 0.3s ease-in-out;
   margin: 0;
   cursor: pointer;
 }
 
-#container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  margin-top: 40vh;
-  height: 25vh;
+#SText:hover{
+  color: rgb(201, 142, 201);
+  font-size: 5.5vw;
+}
+.skill{
+  color: var(--gray);
+  background: var(--purple);
+  border-style:solid;
+  border-color: var(--purple);
+  border-radius: 4px;
+}
+#aboutMe{
+  line-height: 30px;
 }
 
-#mainBox{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 40vw;
-  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
-}
+/*             Things box             */
 
 #thingsBox{
   margin-left: auto;
-  margin-right: 0px;
-  color: rgb(145, 87, 242);
+  margin-right: 0px; 
+  margin-block: auto;
+  color: var(--purple);
   opacity: 0%;
   visibility: hidden;
   transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
-  justify-content: center;
 }
 
-#SText:hover{
-  color: rgb(201, 142, 201);
-  font-size: 4vw;
+.thingsButton{
+  cursor: pointer;
+  font-size: 1vw;
+  color: var(--orred);
+}
+#hideThings{
+  color: rgb(46, 44, 45);
+  font-size: 0.9vw;
 }
 
-#PText:hover{
-  color: rgb(174, 78, 212);
+/*             Projects             */
+
+#projects{
+  margin-top: 60vh;
+}
+#projectsBack{
+  font-size: 1vw;
+  color: rgb(60, 55, 68);
+  cursor: pointer;
+}
+#projectsText{
+  font-size: 5vw;
+  margin-bottom: 4vh;
+  margin-top: 1vh;
+  color: var(--purple);
+}
+#projList{
+  margin-inline: 10vw;
+  display: flex;
+  flex-direction: row;
+}
+.project{
+  width: 30vw;
+  margin-inline: auto;
+  margin-block: 0px;
+}
+.projImg{
+  width: 25vw;
+  height: 15vw;
+  border-style: solid;
+  border-color:var(--gray);
+  border-radius: 8px;
+}
+.projText{
+  color: var(--orred);
+  width:fit-content;
+  margin-inline: auto;
+  font-size: 1.5vw;
+  margin-block: 2vh;
+  cursor: pointer;
+  background-color: var(--gray);
+  border-radius: 4px;
+  border-style:solid;
+  border-color: var(--gray);
+  transition: 0.2s ease-in-out;
+}
+.projText:hover{
+  color: var(--gray);
+  background: var(--orred);
+  border-color: var(--orred);
 }
 
+/*             Icons             */
 .icon{
   width: 1.8vw;
   height: 1.8vw;
@@ -65,8 +145,5 @@ html{
 }
 .icon:hover{
   width: 2vw;
-}
-#hideThings{
-  cursor: pointer;
-  font-size: 1vw;
+  filter:blur(0.6px)
 }

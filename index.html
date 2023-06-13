@@ -6,7 +6,7 @@
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Unbounded&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">		
 		<meta charset="utf-8">
 
 		<title>Vusturs Site</title>
@@ -19,11 +19,27 @@
 				<p id="PText" onclick="toggleThings(true)">Click to see more</p>
 			</div>
 			<div id="thingsBox">
-				<p id="hideThings" onclick="toggleThings(false)">Click to hide</p>
+				<p class="thingsButton" id="hideThings" onclick="toggleThings(false)">Click to hide</p>
+				<p id="aboutMe">I am <span class="skill">С# dev</span><br>
+				and <span class="skill">3D designer</span></p>
+				<p class="thingsButton" onclick="toggleProjects(true)">Show projects</p>
 				<div id="iconsBox">
 					<img class="icon" onclick="window.open('discord.html')" src="assets/icon_discord.png">
-					<img class="icon" onclick="window.open('github.html')"src="assets/icon_github.png">
+					<img class="icon" onclick="window.open('github.html')" src="assets/icon_github.png">
 					<img class="icon" onclick="window.open('telegram.html')" src="assets/icon_telegram.png">
+				</div>
+			</div>
+		</div>
+		<div id="projects">
+			<p onclick="toggleProjects(false)" id="projectsBack">Back to top</p>
+			<p id="projectsText">My projects</p>
+			<div id="projList">
+				<div class="project" id="thisSite">
+					<img class="projImg" src="assets/projImgs/site.png">
+					<p title="Yes, this site" id="thisSiteText" onclick="thisSiteTextClick()" class="projText">This site</p>
+					<div class="projLinksButtons">
+						<img class="icon" onclick="window.open('projects/link_siteGithub.html')" src="assets/icon_github.png">
+					</div>
 				</div>
 			</div>
 		</div>
