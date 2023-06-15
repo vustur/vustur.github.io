@@ -16,31 +16,40 @@
 		<div id="container">
 			<div id="mainBox">
 				<p id="SText">Vustur</p>
-				<p id="PText" onclick="toggleThings(true)">Click to see more</p>
+				<button onclick="toggleThings(true)">Click to see more</button>
 			</div>
 			<div id="thingsBox">
-				<p class="thingsButton" id="hideThings" onclick="toggleThings(false)">Click to hide</p>
+				<button class="notsogray" onclick="toggleThings(false)">Click to hide</button>
 				<p id="aboutMe">I am <span class="skill">С# dev</span><br>
 				and <span class="skill">3D designer</span></p>
-				<p class="thingsButton" onclick="toggleProjects(true)">Show projects</p>
+				<button onclick="toggleProjects(true)">Show projects</button>
 				<div id="iconsBox">
-					<img class="icon" onclick="window.open('discord.html')" src="assets/icon_discord.png">
-					<img class="icon" onclick="window.open('github.html')" src="assets/icon_github.png">
-					<img class="icon" onclick="window.open('telegram.html')" src="assets/icon_telegram.png">
+					<img class="icon" onclick="window.open('discord.html')" src="assets/icons/icon_discord.png">
+					<img class="icon" onclick="window.open('github.html')" src="assets/icons/icon_github.png">
+					<img class="icon" onclick="window.open('telegram.html')" src="assets/icons/icon_telegram.png">
 				</div>
 			</div>
 		</div>
 		<div id="projects">
-			<p onclick="toggleProjects(false)" id="projectsBack">Back to top</p>
+			<button class="notsogray" onclick="toggleProjects(false)">Back to top</button>
 			<p id="projectsText">My projects</p>
 			<div id="projList">
-				<div class="project" id="thisSite">
+
+				<div class="project">
 					<img class="projImg" src="assets/projImgs/site.png">
-					<p title="Yes, this site" id="thisSiteText" onclick="thisSiteTextClick()" class="projText">This site</p>
+					<button title="Yes, this site" id="thisSiteText" onclick="thisSiteTextClick()">This site</button>
 					<div class="projLinksButtons">
-						<img class="icon" onclick="window.open('projects/link_siteGithub.html')" src="assets/icon_github.png">
+						<img class="icon" onclick="window.open('projects/link_siteGithub.html')" src="assets/icons/icon_github.png">
 					</div>
 				</div>
+
+				<div class="project">
+					<img class="projImg" src="assets/projImgs/unknown.png">
+					<button>Other soon...</button>
+					<div class="projLinksButtons">
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</body>

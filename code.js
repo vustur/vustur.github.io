@@ -1,48 +1,42 @@
 function toggleThings(isEnable){
+    var thingsBox = document.getElementById("thingsBox");
+    var mainBox = document.getElementById("mainBox");
+
     if (isEnable){
-        var thingsBox = document.getElementById("thingsBox");
-        var mainBox = document.getElementById("mainBox");
-        var PText = document.getElementById("PText");
-    
         console.log("thingsEnabled");
         thingsBox.style.visibility = "visible";
         thingsBox.style.opacity = "100%";
         thingsBox.style.marginRight = "30vw";
         mainBox.style.marginLeft = "18vw";
-        PText.style.color = "rgb(40, 40, 40)";
     }
     if (!isEnable){
-        var thingsBox = document.getElementById("thingsBox");
-        var mainBox = document.getElementById("mainBox");
-        var PText = document.getElementById("PText");
-    
         console.log("thingsDisabled");
         thingsBox.style.visibility = "hidden";
         thingsBox.style.opacity = "0%";
         thingsBox.style.marginRight = "15vw";
         mainBox.style.marginLeft = "34vw";
-        PText.style.color = "var(--orred)";
     }
 }
 function toggleProjects(isEnable){
-    if (isEnable){
-        var container = document.getElementById("container");
-        console.log("showProjects1");
+    var container = document.getElementById("container");
+    var projects = document.getElementById("projects");
 
+    if (isEnable){
         container.style.marginTop = "-70vh";
+        projects.style.visibility = "visible"
+        container.style.visibility = "hidden"
         // stupid but working good 🔥
     }
     if(!isEnable){
-        var container = document.getElementById("container");
-        console.log("hideProjects1");
-
         container.style.marginTop = "40vh";
+        projects.style.visibility = "hidden"
+        container.style.visibility = "visible"
     }
 }
 
 var clicks = 0;
 
-function thisSiteTextClick(){ // Easter egg. Not usefull
+/* function thisSiteTextClick(){ // Easter egg. Not usefull. UPD: Появился баг с этой штукой, пока решил убрать
     console.log(clicks)
     var tstext = document.getElementById("thisSiteText");
 
@@ -72,8 +66,26 @@ function thisSiteTextClick(){ // Easter egg. Not usefull
     }
     
     clicks = clicks + 1;
-    console.log(clicks)
+    console.log(clicks);
+} */
+
+var locs = window.location.pathname.split("/")
+var myLoc = locs[locs.length - 1] // Последняя часть пути (будет либо index.html, либо toosmall.html)
+if (screen.width < 850 && myLoc == "index.html"){
+    window.alert("Слишком маленькое окно");
+    window.location.href = "toosmall.html";
 }
-if (screen.width < 850){
-    window.alert("Слишком маленькое окно")
+if (screen.width >= 850 && myLoc == "toosmall.html"){
+    window.location.href = "index.html";
 }
+
+document.addEventListener("wheel", (event) => {
+    wheel = event.deltaY;
+    //  console.log(wheel)
+    if (wheel < 0){
+        toggleProjects(false)
+    }
+    if (wheel > 0){
+        toggleProjects(true)
+    }
+})
