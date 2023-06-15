@@ -71,7 +71,7 @@ var clicks = 0;
 
 var locs = window.location.pathname.split("/")
 var myLoc = locs[locs.length - 1] // Последняя часть пути (будет либо index.html, либо toosmall.html)
-if (screen.width < 850 && myLoc == "index" || myLoc == undefined){
+if (screen.width < 850 && myLoc == "index" || myLoc == ''){
     window.alert("Слишком маленькое окно");
     window.location.href = "toosmall";
     console.log("too small wind")
