@@ -69,14 +69,15 @@ var clicks = 0;
     console.log(clicks);
 } */
 
+var rswidth = window.innerWidth * devicePixelRatio;
 var locs = window.location.pathname.split("/")
 var myLoc = locs[locs.length - 1] // Последняя часть пути (будет либо index.html, либо toosmall.html)
-if (window.innerWidth < 700 && myLoc == "index" || myLoc == ''){
+if (rswidth < 600 && myLoc == "index" || myLoc == ''){
     window.alert("Слишком маленькое окно");
     window.location.href = "toosmall";
     console.log("too small wind")
 }
-if (window.innerWidth >= 850 && myLoc == "toosmall"){
+if (rswidth >= 600 && myLoc == "toosmall"){
     window.location.href = "index";
     console.log("normal wind")
 }
