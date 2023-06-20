@@ -69,10 +69,10 @@ var clicks = 0;
     console.log(clicks);
 } */
 
-var scrSizeBool = (window.innerWidth > window.innerHeight); 
+var scrSizeBool = (window.innerWidth > window.innerHeight);
 var locs = window.location.pathname.split("/")
 var myLoc = locs[locs.length - 1] // Последняя часть пути (будет либо index.html, либо toosmall.html)
-var indexLocs = ["index", "", "index", "index.html"];
+var indexLocs = ["index", "", "index.html"];
 var tsLocs = ["toosmall", "toosmall.html"];
 if (!scrSizeBool && indexLocs.includes(myLoc)){
     window.alert("Слишком маленькое окно");
