@@ -69,14 +69,17 @@ var clicks = 0;
     console.log(clicks);
 } */
 
+var scrSizeBool = (window.innerWidth > window.innerHeight); 
 var locs = window.location.pathname.split("/")
 var myLoc = locs[locs.length - 1] // Последняя часть пути (будет либо index.html, либо toosmall.html)
-if (screen.width < 700 && myLoc == "index" || myLoc == ''){
+var indexLocs = ["index", "", "index", "index.html"];
+var tsLocs = ["toosmall", "toosmall.html"];
+if (!scrSizeBool && indexLocs.includes(myLoc)){
     window.alert("Слишком маленькое окно");
     window.location.href = "toosmall";
     console.log("too small wind")
 }
-if (screen.width >= 850 && myLoc == "toosmall"){
+if (scrSizeBool && tsLocs.includes(myLoc)){
     window.location.href = "index";
     console.log("normal wind")
 }
