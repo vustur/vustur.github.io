@@ -1,147 +1,65 @@
-html{
-  /*  Vars  */
-  /* Цветовая палитра */
-  --purple: rgb(128, 67, 240);
-  --orred: rgb(223, 133, 106);
-  --orange: rgb(231, 178, 109);
-  --gray: rgb(27, 27, 27);
-  --notsogray: rgb(47, 47, 47);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  background-color: var(--gray);
-  overflow-x: hidden;
-  overflow-y: hidden;
+html{
+  background-color: rgb(27, 27, 27);
   font-family: Unbounded;
   text-align: center;
+  overflow-x: hidden;
 }
 
-#container {
-  display: flex;
-  margin: auto;
-  margin-top: 40vh;
-  height: auto;
-  transition: 0.9s cubic-bezier(0.16, 0.41, 0.46, 1.0);
+.purple{
+  color: rgb(128, 67, 240);
 }
 
-/*             Main box             */
-
-#mainBox{
-  display: flex;
-  flex-direction: column;
-  margin-left: 34vw;
-  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
-  margin-block: auto;
+.orred{
+  color:rgb(223, 133, 106);
 }
 
-#SText{
-  font-size: 6vw;
-  color:var(--purple);
-  transition: 0.5s cubic-bezier(0.42, 0, 0.03, 2.18);
-  margin: 0;
-  cursor: default;
+.orange{
+  color: rgb(231, 178, 109);
 }
 
-#SText:hover{
-  color: rgb(201, 142, 201);
-  font-size: 5.5vw;
+.anon-pro-font{
+  font-family: Anonymous Pro;
 }
 
-.skill{
-  color: var(--gray);
-  background: var(--purple);
-  border-style:solid;
-  border-color: var(--purple);
-  border-radius: 4px;
-}
-#aboutMe{
-  line-height: 5vh;
-  font-size: 1.3vw;
-  margin-block: 0.6vh;
+.projbase {
+  @apply w-5/6 sm:w-80 h-72 mx-4 border-dashed border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen;
 }
 
-/*             Things box             */
-
-#thingsBox{
-  margin-left: auto;
-  margin-right: 0px; 
-  margin-block: auto;
-  color: var(--purple);
-  opacity: 0%;
-  visibility: hidden;
-  transition: 0.5s cubic-bezier(0.45, 0.28, 0, 1.77);
+.projname {
+  @apply purple;
 }
 
-/*             Projects             */
-
-#projects{
-  margin-top: 60vh;
-  visibility: hidden;
-  transition: 0.3s ease-in-out;
-}
-#projectsText{
-  font-size: 5vw;
-  margin-bottom: 4vh;
-  margin-top: 1vh;
-  color: var(--purple);
-}
-#projList{
-  margin-inline: 10vw;
-  display: flex;
-  flex-direction: row;
-}
-.project{
-  width: 30vw;
-  margin-inline: auto;
-  margin-block: 0px;
-}
-.projImg{
-  width: 25vw;
-  height: 15vw;
-  border-style: solid;
-  border-color:var(--gray);
-  border-radius: 8px;
-  transition: 0.3s cubic-bezier(0, 1.07, 1, 1.04);
-}
-.projImg:hover{
-  rotate: 5deg;
+.projdesc {
+  @apply text-zinc-500 anon-pro-font;
 }
 
-/*             Other             */
-.icon{
-  width: 1.8vw;
-  height: 1.8vw;
-  transition: 0.2s cubic-bezier(1, 0, 0, 1);
+.projimg {
+  @apply h-48 rounded-lg;
+  min-width: 19.75rem;
+  max-width: 19.75rem
+}
+
+.orgbtn {
+  @apply bg-orange-400 text-gray-800 p-1 rounded-lg;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.orgbtn:hover {
+  @apply bg-orange-300 px-4 rounded-lg
+}
+
+.link-icon {
+  @apply w-6 h-6 mx-5;
+}
+
+.link-icon:hover {
   cursor: pointer;
 }
-.icon:hover{
-  width: 2vw;
-  filter:blur(0.6px)
-}
-button{
-  color: var(--orred);
-  font-family: Unbounded;
-  width: fit-content;
-  margin-inline: auto;
-  font-size: 1.2vw;
-  margin-block: 1vh;
-  cursor: pointer;
-  background-color: var(--gray);
-  border-radius: 4px;
-  border-style:solid;
-  border-color: var(--gray);
-  transition: 0.2s ease-in-out;
-}
-button:hover{
-  color: var(--gray);
-  background: var(--orred);
-  border-color: var(--orred);
-}
-.notsogray{
-  color: var(--notsogray);
-  font-size: 0.9vw;
-}
-#tooSmallWinText{
-  margin-top: 40vh;
-  line-height: 5vh;
-  font-size: 3vh;
-  color: var(--purple);
+
+.al-cen {
+  align-items: center;
 }

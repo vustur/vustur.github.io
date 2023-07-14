@@ -1,55 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<link href="style.css" rel="stylesheet" type="text/css">
-		<script src="code.js"></script>
+		<link href="style.css" rel="stylesheet">
+		<link href="tw.css" rel="stylesheet">
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">		
+		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<title>Vusturs Site</title>
 		<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/1077115933056847922/0b85a6d016edf1b2a99f716d799d0ce1.webp?size=80">
 	</head>
 	<body>
-		<div id="container">
-			<div id="mainBox">
-				<p id="SText">Vustur</p>
-				<button onclick="toggleThings(true)">Click to see more</button>
-			</div>
-			<div id="thingsBox">
-				<button class="notsogray" onclick="toggleThings(false)">Click to hide</button>
-				<p id="aboutMe">I am <span class="skill">С# dev</span><br>
-				and <span class="skill">3D designer</span></p>
-				<button onclick="toggleProjects(true)">Show projects</button>
-				<div id="iconsBox">
-					<img class="icon" onclick="window.open('discord.html')" src="assets/icons/icon_discord.png">
-					<img class="icon" onclick="window.open('github.html')" src="assets/icons/icon_github.png">
-					<img class="icon" onclick="window.open('telegram.html')" src="assets/icons/icon_telegram.png">
+		<div class="h-auto mt-64">
+			<div class="flex flex-col lg:flex-row justify-center text-center">
+				<p class="text-6xl sm:text-8xl purple">
+					Vustur
+				</p>
+				<div class="orred lg:ml-24 text-center lg:text-left flex flex-col">
+					<p style="line-height: 23px">
+						Im
+					</p>
+					<p class="orange bg-none lg:bg-purple-600 rounded-md lg:text-gray-900 text-2xl p-0.5">
+						Godot Dev <br>
+						Designer
+					</p>
 				</div>
 			</div>
 		</div>
-		<div id="projects">
-			<button class="notsogray" onclick="toggleProjects(false)">Back to top</button>
-			<p id="projectsText">My projects</p>
-			<div id="projList">
-
-				<div class="project">
-					<img class="projImg" src="assets/projImgs/site.png">
-					<button title="Yes, this site" id="thisSiteText" onclick="thisSiteTextClick()">This site</button>
-					<div class="projLinksButtons">
-						<img class="icon" onclick="window.open('projects/link_siteGithub.html')" src="assets/icons/icon_github.png">
-					</div>
+		<div class="flex flex-row mt-48 justify-center">
+			<img src="assets/icons/icon_discord.png" onclick="window.open('discord.html')" class="link-icon">
+			<img src="assets/icons/icon_github.png" onclick="window.open('github.html')" class="link-icon">
+			<img src="assets/icons/icon_telegram.png" onclick="window.open('telegram.html')" class="link-icon">
+		</div>
+		<div class="anon-pro-font text-2xl purple">
+			<a href="https://example.com"> Projects /</a>
+			<a href="https://example.com"> Smth /</a>
+			<a href="https://example.com"> Smth 2</a>
+		</div>
+		<div class="mt-36 mb-8">
+			<p class="purple text-5xl mb-20">Projects</p>
+			<div class="flex flex-wrap md:flex-row justify-center al-cen">
+				<div class="projbase">
+					<img src="assets/projImgs/site.png" class="projimg">
+					<p class="projname">
+						This site
+					</p>
+					<p class="projdesc">
+						You are here!
+					</p>
+					<button class="orgbtn">
+						<a href="https://youtu.be/dQw4w9WgXcQ">🤨</a>
+					</button>
 				</div>
-
-				<div class="project">
-					<img class="projImg" src="assets/projImgs/unknown.png">
-					<button>Other soon...</button>
-					<div class="projLinksButtons">
-					</div>
+				<div class="projbase">
+					<img src="assets/projImgs/wavoo.png" class="projimg">
+					<p class="projname">
+						Wavoo
+					</p>
+					<p class="projdesc">
+						Short platformer
+					</p>
+					<button class="orgbtn">
+						<a href="https://vustur.itch.io/wavoo">Open</a>
+					</button>
 				</div>
-
 			</div>
 		</div>
 	</body>
