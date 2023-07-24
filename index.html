@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link href="style.css" rel="stylesheet">
-		<link href="tw.css" rel="stylesheet">
-		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link href="style.css" rel="stylesheet">
 
 		<title>Vusturs Site</title>
 		<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/1077115933056847922/0b85a6d016edf1b2a99f716d799d0ce1.webp?size=80">
 	</head>
-	<body>
+	<body style="font-family: Unbounded;">
+		<!-- Site start -->
 		<div class="h-auto mt-64">
 			<div class="flex flex-col lg:flex-row justify-center text-center">
-				<p class="text-6xl sm:text-8xl purple">
+				<p class="name text-6xl sm:text-8xl purple">
 					Vustur
 				</p>
 				<div class="orred lg:ml-24 text-center lg:text-left flex flex-col">
 					<p style="line-height: 23px">
 						Im
 					</p>
-					<p class="orange bg-none lg:bg-purple-600 rounded-md lg:text-gray-900 text-2xl p-0.5">
+					<p class="bg-purple-600 rounded-md w-fit mx-auto text-gray-900 text-2xl p-0.5">
 						Godot Dev <br>
-						Designer
+						Shpshuy <br>
 					</p>
 				</div>
 			</div>
 		</div>
 		<div class="flex flex-row mt-48 justify-center">
-			<img src="assets/icons/icon_discord.png" onclick="window.open('discord.html')" class="link-icon">
-			<img src="assets/icons/icon_github.png" onclick="window.open('github.html')" class="link-icon">
-			<img src="assets/icons/icon_telegram.png" onclick="window.open('telegram.html')" class="link-icon">
+			<img src="assets/icons/icon_discord.png" onclick="window.open('discord.html')" class="w-6 h-6 hover:w-8 hover:h-8 hover:cursor-pointer mx-5" style="transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)">
+			<img src="assets/icons/icon_github.png" onclick="window.open('github.html')" class="w-6 h-6 hover:w-8 hover:h-8 hover:cursor-pointer mx-5" style="transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)">
+			<img src="assets/icons/icon_telegram.png" onclick="window.open('telegram.html')" class="w-6 h-6 hover:w-8 hover:h-8 hover:cursor-pointer mx-5" style="transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1)">
 		</div>
-		<div class="anon-pro-font text-2xl purple">
-			<a href="https://example.com"> Projects /</a>
-			<a href="https://example.com"> Smth /</a>
-			<a href="https://example.com"> Smth 2</a>
-		</div>
+		<!-- Projects -->
 		<div class="mt-36 mb-8">
-			<p class="purple text-5xl mb-20">Projects</p>
-			<div class="flex flex-wrap md:flex-row justify-center al-cen">
-				<div class="projbase">
-					<img src="assets/projImgs/site.png" class="projimg">
-					<p class="projname">
+			<p id="projects" class="purple text-5xl mb-20">Projects</p>
+			<div class="flex flex-wrap md:flex-row justify-center " style="align-items: center;">
+				<div class="w-5/6 sm:w-96 h-80 mx-4 bg-zinc-950 bg-opacity-20 border-solid border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center " style="align-items: center;">
+					<img src="assets/projImgs/site.png" class="h-48 rounded-lg" style="max-width: 100%;">
+					<p class="purple">
 						This site
 					</p>
-					<p class="projdesc">
-						You are here!
+					<p class="text-zinc-500 anon-pro-font" style="line-height: 1.2rem">
+						You are here! Should i describe this one?
 					</p>
-					<button class="orgbtn">
+					<button class="bg-orange-400 text-gray-800 p-1 rounded-lg my-1 hover:bg-orange-300 hover:px-4 hover:rounded-lg" style="transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)">
 						<a href="https://youtu.be/dQw4w9WgXcQ">🤨</a>
 					</button>
 				</div>
-				<div class="projbase">
-					<img src="assets/projImgs/wavoo.png" class="projimg">
-					<p class="projname">
+				<div class="w-5/6 sm:w-96 h-80 mx-4 bg-zinc-950 bg-opacity-20 border-solid border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center " style="align-items: center;">
+					<img src="assets/projImgs/wavoo.png" class="h-48 rounded-lg" style="max-width: 100%;">
+					<p class="purple">
 						Wavoo
 					</p>
-					<p class="projdesc">
-						Short platformer
+					<p class="text-zinc-500 anon-pro-font" style="line-height: 1.2rem">
+						Short platformer game for learning godot
 					</p>
-					<button class="orgbtn">
-						<a href="https://vustur.itch.io/wavoo">Open</a>
+					<button class="bg-orange-400 text-gray-800 p-1 rounded-lg my-1 hover:bg-orange-300 hover:px-4 hover:rounded-lg" style="transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)">
+						<a href="https://vustur.itch.io/wavoo">Play</a>
 					</button>
 				</div>
 			</div>
+		</div>
+		<div>
+			<p id="aboutMe" class="purple text-5xl mb-8">About Me</p>
+			<p class="text-white anon-pro-font text-2xl text-left bg-zinc-950 bg-opacity-30 p-2 px-12 border-transparent border-l-orange-500 border-8 rounded-r-2xl mb-8 w-fit mx-auto">
+				I am Vustur (obviously) <br>
+				uhhhhhh i like cats <br>
+				... <br>
+				<br>
+				<span class="text-green-400">// TODO: Make this text informative </span>
+			</p>	
 		</div>
 	</body>
 </html>

@@ -1,10 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html{
   background-color: rgb(27, 27, 27);
-  font-family: Unbounded;
   text-align: center;
   overflow-x: hidden;
 }
@@ -22,44 +17,5 @@ html{
 }
 
 .anon-pro-font{
-  font-family: Anonymous Pro;
-}
-
-.projbase {
-  @apply w-5/6 sm:w-80 h-72 mx-4 border-dashed border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen;
-}
-
-.projname {
-  @apply purple;
-}
-
-.projdesc {
-  @apply text-zinc-500 anon-pro-font;
-}
-
-.projimg {
-  @apply h-48 rounded-lg;
-  min-width: 19.75rem;
-  max-width: 19.75rem
-}
-
-.orgbtn {
-  @apply bg-orange-400 text-gray-800 p-1 rounded-lg;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
-}
-
-.orgbtn:hover {
-  @apply bg-orange-300 px-4 rounded-lg
-}
-
-.link-icon {
-  @apply w-6 h-6 mx-5;
-}
-
-.link-icon:hover {
-  cursor: pointer;
-}
-
-.al-cen {
-  align-items: center;
+  font-family: Anonymous Pro, monospace;
 }
