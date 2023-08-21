@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<link href="style.css" rel="stylesheet">
+		
 		<link href="tw.css" rel="stylesheet">
 		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,23 +11,25 @@
 		<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 		<title>Vusturs Site</title>
 		<link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/1077115933056847922/0b85a6d016edf1b2a99f716d799d0ce1.webp?size=80">
 	</head>
 	<body>
+		<!-- Site start -->
 		<div class="h-auto mt-64">
 			<div class="flex flex-col lg:flex-row justify-center text-center">
-				<p class="text-6xl sm:text-8xl purple">
+				<p class="name text-6xl sm:text-8xl purple">
 					Vustur
 				</p>
 				<div class="orred lg:ml-24 text-center lg:text-left flex flex-col">
 					<p style="line-height: 23px">
 						Im
 					</p>
-					<p class="orange bg-none lg:bg-purple-600 rounded-md lg:text-gray-900 text-2xl p-0.5">
+					<p class="bg-purple-600 rounded-md w-fit mx-auto text-gray-900 text-2xl p-0.5">
 						Godot Dev <br>
-						Designer
+						Shpshuy <br>
 					</p>
 				</div>
 			</div>
@@ -36,13 +39,14 @@
 			<img src="assets/icons/icon_github.png" onclick="window.open('github.html')" class="link-icon">
 			<img src="assets/icons/icon_telegram.png" onclick="window.open('telegram.html')" class="link-icon">
 		</div>
-		<div class="anon-pro-font text-2xl purple">
-			<a href="https://example.com"> Projects /</a>
-			<a href="https://example.com"> Smth /</a>
-			<a href="https://example.com"> Smth 2</a>
+		<div class="anon-pro-font text-2xl text-purple-400 mt-6">
+			<a href="#projects">Projects / </a>
+			<a href="#aboutMe">About Me </a>
+			<a class="text-purple-600 opacity-25"># Updated: 21.08.23</a>
 		</div>
-		<div class="mt-36 mb-8">
-			<p class="purple text-5xl mb-20">Projects</p>
+		<!-- Projects -->
+		<div class="mt-20 mb-8">
+			<p id="projects" class="purple text-5xl mb-20">Projects</p>
 			<div class="flex flex-wrap md:flex-row justify-center al-cen">
 				<div class="projbase">
 					<img src="assets/projImgs/site.png" class="projimg">
@@ -50,11 +54,16 @@
 						This site
 					</p>
 					<p class="projdesc">
-						You are here!
+						You are here! Should i describe this one?
 					</p>
-					<button class="orgbtn">
-						<a href="https://youtu.be/dQw4w9WgXcQ">🤨</a>
-					</button>
+					<div class="projBtnList">
+						<button class="orgbtn">
+							<a href="https://github.com/vustur/vustur.github.io">Github</a>
+						</button>
+						<button class="orgbtn">
+							<a href="https://github.com/vustur/vustur.github.io">Smth cool</a>
+						</button>
+					</div>
 				</div>
 				<div class="projbase">
 					<img src="assets/projImgs/wavoo.png" class="projimg">
@@ -62,12 +71,24 @@
 						Wavoo
 					</p>
 					<p class="projdesc">
-						Short platformer
+						Short platformer game for learning godot
 					</p>
 					<button class="orgbtn">
-						<a href="https://vustur.itch.io/wavoo">Open</a>
+						<a href="https://vustur.itch.io/wavoo">Play</a>
 					</button>
 				</div>
+			</div>
+		</div>
+		<div>
+			<p id="aboutMe" class="purple text-5xl mb-8">About Me</p>
+			<div class="flex flex-wrap justify-center">
+				<p class="text-white anon-pro-font mx-3 text-2xl text-left bg-zinc-950 bg-opacity-30 p-2 px-12 border-transparent border-l-orange-500 border-8 rounded-r-2xl mb-8 w-fit">
+					I am Vustur (obviously) <br>
+					uhhhhhh i like cats <br>
+					... <br>
+					<br>
+					<span class="text-green-400">// TODO: Make this text informative </span>
+				</p>
 			</div>
 		</div>
 	</body>

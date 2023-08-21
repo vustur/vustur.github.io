@@ -22,11 +22,16 @@ html{
 }
 
 .anon-pro-font{
-  font-family: Anonymous Pro;
+  font-family: Anonymous Pro, monospace;
 }
 
 .projbase {
-  @apply w-5/6 sm:w-80 h-72 mx-4 border-dashed border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen;
+  @apply w-5/6 sm:w-96 h-80 mx-4 bg-zinc-950 bg-opacity-20 border-solid border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen shadow-lg shadow-black py-5;
+  transition: 0.7s cubic-bezier(0.18, 0.89, 0.83, 0.99);
+}
+
+.projbase:hover{
+  @apply p-0 h-72
 }
 
 .projname {
@@ -35,29 +40,32 @@ html{
 
 .projdesc {
   @apply text-zinc-500 anon-pro-font;
+  line-height: 1.2rem
 }
 
 .projimg {
   @apply h-48 rounded-lg;
-  min-width: 19.75rem;
-  max-width: 19.75rem
+  max-width: 100%;
 }
 
 .orgbtn {
-  @apply bg-orange-400 text-gray-800 p-1 rounded-lg;
+  @apply bg-orange-400 text-gray-800 p-1 rounded-lg my-1;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
 .orgbtn:hover {
-  @apply bg-orange-300 px-4 rounded-lg
+  @apply bg-orange-300 px-4 rounded-lg shadow-md shadow-orange-300
 }
 
 .link-icon {
   @apply w-6 h-6 mx-5;
+  transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .link-icon:hover {
+  @apply w-8 h-8;
   cursor: pointer;
+  filter:hue-rotate(90deg)
 }
 
 .al-cen {
