@@ -75,3 +75,21 @@ html{
 .borderonhover:hover{
   @apply border-8
 }
+
+.plusdiv {
+  @apply w-4/6 lg:w-3/6 flex flex-wrap rounded-lg shadow-md shadow-black bg-zinc-800 mx-auto mt-6;
+}
+
+.plusdivtexts {
+  @apply flex flex-wrap text-white
+}
+
+.blrpbutton {
+  @apply p-2 mt-4 w-fit mx-auto rounded-lg shadow-md shadow-black;
+  background-color: rgb(88, 101, 242);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.blrpbutton:hover {
+  background-color: rgb(71, 82, 196);
+}
