@@ -3,22 +3,10 @@
 @tailwind utilities;
 
 html{
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(26, 26, 26);
   font-family: Unbounded;
   text-align: center;
   overflow-x: hidden;
-}
-
-.purple{
-  color: rgb(128, 67, 240);
-}
-
-.orred{
-  color:rgb(223, 133, 106);
-}
-
-.orange{
-  color: rgb(231, 178, 109);
 }
 
 .anon-pro-font{
@@ -26,7 +14,7 @@ html{
 }
 
 .projbase {
-  @apply w-5/6 sm:w-96 h-96 mx-4 bg-zinc-950 bg-opacity-20 border-solid border-orange-400 rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen shadow-lg shadow-black py-5;
+  @apply w-5/6 sm:w-96 h-96 mx-4 bg-zinc-950 border-orangoo bg-opacity-40 border-solid rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen shadow-lg shadow-black py-5;
   transition: 0.7s cubic-bezier(0.18, 0.89, 0.83, 0.99);
 }
 
@@ -35,7 +23,7 @@ html{
 }
 
 .projname {
-  @apply purple;
+  @apply text-purploo;
 }
 
 .projdesc {
@@ -49,12 +37,12 @@ html{
 }
 
 .orgbtn {
-  @apply bg-orange-400 text-gray-800 p-1 rounded-lg my-1;
+  @apply bg-orangoo text-gray-800 p-1 rounded-lg my-1;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
 .orgbtn:hover {
-  @apply bg-orange-300 px-4 rounded-lg shadow-md shadow-orange-300
+  @apply bg-orangoo px-4 rounded-lg shadow-md shadow-orangoo
 }
 
 .link-icon {
