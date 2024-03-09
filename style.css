@@ -19,7 +19,7 @@ html{
 }
 
 .projbase:hover{
-  @apply p-0 h-80
+  @apply p-0
 }
 
 .projname {
