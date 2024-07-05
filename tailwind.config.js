@@ -4,10 +4,10 @@ module.exports = {
     theme: {
       extend: {
         colors: {
-          'purploo': '#8043F0',
-          'orangoo': '#fc7c26',
+          'purploo': '#a27de8',
+          'orangoo': '#fc7b25',
           'graypurp': '#4B4453',
-          'pinkman': '#cb6df7',
+          'pinkman': '#d596f2',
         },
       },
     },

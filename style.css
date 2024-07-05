@@ -23,7 +23,7 @@ html{
 }
 
 .projname {
-  @apply text-purploo;
+  @apply text-purploo mt-2;
 }
 
 .projdesc {
@@ -36,8 +36,12 @@ html{
   max-width: 100%;
 }
 
+/* .projBtnList {
+  @apply 
+} */
+
 .orgbtn {
-  @apply bg-orangoo text-gray-800 p-1 rounded-lg my-1;
+  @apply bg-orangoo text-gray-800 p-1 rounded-lg my-1 px-2 mx-0.5;
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1)
 }
 
