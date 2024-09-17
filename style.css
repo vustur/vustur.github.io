@@ -14,12 +14,16 @@ html{
 }
 
 .projbase {
-  @apply w-5/6 sm:w-96 h-96 mx-4 bg-zinc-950 border-orangoo bg-opacity-40 border-solid rounded-lg border-2 mb-3 overflow-hidden flex flex-col justify-center al-cen shadow-lg shadow-black py-5;
+  @apply w-5/6 sm:w-96 h-96 mx-4 mb-4 p-1 bg-gradient-to-tr from-orange-500 to-red-500 rounded-lg overflow-hidden shadow-lg shadow-black;
   transition: 0.7s cubic-bezier(0.18, 0.89, 0.83, 0.99);
 }
 
 .projbase:hover{
-  @apply p-0
+  @apply shadow-md shadow-black
+}
+
+.inprojbase {
+  @apply bg-neutral-900 flex flex-col justify-center al-cen h-full w-full rounded-lg
 }
 
 .projname {
@@ -62,10 +66,6 @@ html{
 
 .al-cen {
   align-items: center;
-}
-
-.borderonhover:hover{
-  @apply border-8
 }
 
 .plusdiv {

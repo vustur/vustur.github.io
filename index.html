@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link href="style.css" rel="stylesheet">
-		
-		<link href="tw.css" rel="stylesheet">
-		
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
-		<title>Vusturs Site</title>
-		<link rel="icon" type="image/x-icon" href="assets/mousetrap.png">
-	</head>
-	<body>
-		<!-- Site start -->
-		<div class="h-auto mt-64">
-			<div class="flex flex-col lg:flex-row justify-center text-center">
-				<p class="name text-6xl sm:text-8xl text-purploo">
-					Vustur
+<head>
+	<link href="style.css" rel="stylesheet">
+
+	<link href="tw.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+	<title>Vusturs Site</title>
+	<link rel="icon" type="image/x-icon" href="assets/mousetrap.png">
+</head>
+
+<body>
+	<!-- Site start -->
+	<div class="h-auto mt-56">
+		<div class="flex flex-col lg:flex-row justify-center text-center">
+			<p class="name text-6xl sm:text-8xl text-purploo">
+				Vustur
+			</p>
+			<div class="lg:ml-24 text-center lg:text-left flex flex-col">
+				<p class="text-purploo" style="line-height: 23px">
+					Im
 				</p>
-				<div class="lg:ml-24 text-center lg:text-left flex flex-col">
-					<p class="text-purploo" style="line-height: 23px">
-						Im
-					</p>
-					<p class="bg-orangoo rounded-md w-fit mx-auto text-gray-900 text-md p-0.5">
-						Godot Dev <br>
-						Next.js Dev <br>
-					</p>
-				</div>
+				<p class="bg-gradient-to-tr from-orange-500 to-red-400 rounded-md w-fit mx-auto text-gray-900 text-md p-0.5">
+					Godot Dev <br>
+					Next.js Dev <br>
+					Musician (kinda) <br>
+				</p>
 			</div>
 		</div>
-		<div class="flex flex-row mt-48 h-8 justify-center">
-			<img src="assets/icons/discord.svg"  onclick="window.open('discord.html')" class="link-icon">
-			<img src="assets/icons/github.svg"   onclick="window.open('github.html')" class="link-icon">
-			<img src="assets/icons/telegram.svg" onclick="window.open('telegram.html')" class="link-icon">
-		</div>
-		<div class="anon-pro-font text-2xl text-pinkman mt-6">
-			<a href="#projects">Projects / </a>
-			<a href="#aboutMe">About Me </a>
-			<a class="text-pinkman opacity-40"># Updated: 05.07.2024</a>
-		</div>
-		<!-- Projects -->
-		<div class="mt-20 mb-8">
-			<p id="projects" class="text-purploo text-5xl mb-20">Projects</p>
-			<div class="flex flex-wrap md:flex-row justify-center al-cen">
-				<div class="projbase">
+	</div>
+	<div class="flex flex-row mt-48 h-8 justify-center">
+		<img src="assets/icons/discord.svg" onclick="window.open('discord.html')" class="link-icon">
+		<img src="assets/icons/github.svg" onclick="window.open('github.html')" class="link-icon">
+		<img src="assets/icons/telegram.svg" onclick="window.open('telegram.html')" class="link-icon">
+		<img src="assets/icons/ng_tank.png" onclick="window.open('https://vustur.newgrounds.com')" class="link-icon">
+	</div>
+	<div class="anon-pro-font text-2xl text-pinkman mt-6">
+		<a href="#projects">Projects / </a>
+		<a href="#aboutMe">About Me </a>
+		<a class="text-pinkman opacity-40"># Updated: 17.09.2024</a>
+	</div>
+	<!-- Projects -->
+	<div class="mt-20 mb-8">
+		<p id="projects" class="text-purploo text-5xl mb-20 underline">Projects</p>
+		<div class="flex flex-wrap md:flex-row justify-center al-cen">
+			<div class="projbase">
+				<div class="inprojbase">
 					<img src="assets/projImgs/site.png" class="projimg">
 					<p class="projname">
 						This site
@@ -62,7 +67,9 @@
 						</button>
 					</div>
 				</div>
-				<div class="projbase">
+			</div>
+			<div class="projbase">
+				<div class="inprojbase">
 					<img src="assets/projImgs/smirkcatcat.png" class="projimg">
 					<p class="projname">
 						SmirkCatChat
@@ -76,13 +83,15 @@
 						</button>
 					</div>
 				</div>
-				<div class="projbase">
+			</div>
+			<div class="projbase">
+				<div class="inprojbase">
 					<img src="assets/projImgs/provoda.png" class="projimg">
 					<p class="projname">
 						Provoda
 					</p>
 					<p class="projdesc">
-						My reddit-like app
+						My reddit-like app in next.js
 					</p>
 					<div class="projBtnList">
 						<button class="orgbtn">
@@ -96,7 +105,9 @@
 						</button>
 					</div>
 				</div>
-				<div class="projbase">
+			</div>
+			<div class="projbase">
+				<div class="inprojbase">
 					<img src="assets/projImgs/catreposter.png" class="projimg">
 					<p class="projname">
 						Cats reposter
@@ -112,23 +123,30 @@
 				</div>
 			</div>
 		</div>
-		<p id="aboutMe" class="text-purploo text-5xl mb-8">About Me</p>
-		<div class="flex flex-wrap justify-center al-cen">
-			<div class="mx-6 bg-zinc-950 bg-opacity-30 p-2 px-12 border-transparent border-l-orangoo border-8 rounded-r-2xl mb-8 w-fit shadow-lg shadow-black">
-				<p class="text-white anon-pro-font mx-3 text-2xl text-left ">
-					I am Vustur (obviously) <br>
-					I absolutely love cats and programming <br>
-					I use EndeavourOS and Ubuntu as my main OSes <br>
-					If u still have questions, dm me on discord or telegram <br>
-					<br>
-					... <br>
-					<br>
-					<span class="text-green-400">// PS: check bottom of html </span><br>
-				</p>
-			</div>
-			<img src="assets/catto.jfif" class="borderonhover mx-6 h-48 mb-8 shadow-lg shadow-black rounded-xl border-orangoo" style="transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);" alt="Funny cat pic">
+	</div>
+	<p id="aboutMe" class="text-purploo text-5xl mb-8 underline">About Me</p>
+	<div class="flex flex-wrap justify-center al-cen">
+		<div
+			class="mx-6 bg-zinc-950 bg-opacity-30 p-2 px-12 border-transparent border-l-orangoo border-8 rounded-r-2xl mb-8 w-fit shadow-lg shadow-black">
+			<p class="text-white anon-pro-font mx-3 text-2xl text-left ">
+				I am Vustur (obviously) <br>
+				I absolutely love cats and programming <br>
+				I use EndeavourOS and Ubuntu as my main OSes <br>
+				If u still have questions, dm me on discord or telegram <br>
+				<br>
+				... <br>
+				<br>
+				<span class="text-green-400">// PS: check bottom of html </span><br>
+			</p>
 		</div>
-	</body>
+		<div class="mx-6 mb-8 p-1 shadow-lg shadow-black bg-gradient-to-tr from-orange-500 to-red-500 rounded-xl">
+		<img src="assets/other/fedor_sleep.jpg"
+			class="h-64 rounded-xl border-orangoo transition-all duration-300 ease-in-out"
+			alt="Fedor pic"
+			title="Fedot :3">
+		</div>
+	</div>
+</body>
 <!--
 
   -*****=-.          .       . ..                 ........................................
@@ -178,4 +196,5 @@
 ####%%%@%%%%%%%%%%%%@@@%%%%%%%%%%%%%%######################*#*######**********#######****#
     
  -->
+
 </html>
