@@ -36,7 +36,7 @@ html{
 }
 
 .projimg {
-  @apply h-48 rounded-lg;
+  @apply h-48 rounded-lg mx-2;
   max-width: 100%;
 }
 
