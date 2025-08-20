@@ -1,3 +1,4 @@
 # vustur.github.io
 
-my site 💀
+my site 
+P.S. moved to vustur.xyz
